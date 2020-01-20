@@ -7,7 +7,7 @@ export function useStore<S, R>(store: Store<S>, selector: Selector<S, R>): R;
 export function useStore<S>(
   store: Store<S>,
   selector: Selector<S, any> = (s): S => s
-): S {
+): any {
   const [state, setState] = useState(deref(store));
 
   useEffect(
@@ -15,5 +15,5 @@ export function useStore<S>(
     [store, selector]
   );
 
-  return state;
+  return selector(state);
 }
