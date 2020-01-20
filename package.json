@@ -13,7 +13,7 @@
     "start": "tsdx watch",
     "build": "tsdx build",
     "test": "tsdx test",
-    "test:ci": "tsdx test --coverage",
+    "test:coverage": "tsdx test --coverage",
     "lint": "tsdx lint"
   },
   "peerDependencies": {
@@ -29,6 +29,7 @@
     "@typescript-eslint/parser": "2.17.0",
     "husky": "4.0.10",
     "prettier": "1.19.1",
+    "pretty-quick": "2.0.1",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-test-renderer": "16.12.0",
@@ -41,7 +42,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "tsdx lint"
+      "pre-commit": "tsdx lint && pretty-quick --staged"
     }
   },
   "prettier": {
