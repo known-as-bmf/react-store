@@ -12,7 +12,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test",
+    "test": "tsdx test --watch",
     "test:coverage": "tsdx test --coverage",
     "lint": "tsdx lint"
   },
@@ -22,14 +22,14 @@
   "devDependencies": {
     "@testing-library/react": "9.4.0",
     "@testing-library/react-hooks": "3.2.1",
-    "@types/jest": "24.9.1",
+    "@types/jest": "25.1.2",
     "@types/react": "16.9.19",
     "@types/react-dom": "16.9.5",
-    "@typescript-eslint/eslint-plugin": "2.17.0",
-    "@typescript-eslint/parser": "2.17.0",
+    "@typescript-eslint/eslint-plugin": "2.19.2",
+    "@typescript-eslint/parser": "2.19.2",
     "eslint": "6.8.0",
     "eslint-plugin-react-hooks": "2.3.0",
-    "husky": "4.2.0",
+    "husky": "4.2.3",
     "prettier": "1.19.1",
     "pretty-quick": "2.0.1",
     "react": "16.12.0",
