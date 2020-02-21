@@ -1,10 +1,6 @@
-sudo: false
 language: node_js
 node_js:
   - '12'
-branches:
-  only:
-    - master
 cache:
   directories:
     - node_modules
@@ -16,3 +12,10 @@ script:
   - npm run lint
   - npm run test:coverage
   - npm run build
+deploy:
+  provider: npm
+  edge: true
+  email: $NPM_EMAIL
+  api_key: $NPM_TOKEN
+  on:
+    branch: master

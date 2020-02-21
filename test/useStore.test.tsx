@@ -1,5 +1,5 @@
 import { renderHook, act } from '@testing-library/react-hooks';
-import { of, set, swap } from 'store';
+import { of, set, swap } from '@known-as-bmf/store';
 
 import { useStore } from '../src';
 
