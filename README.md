@@ -1,5 +1,7 @@
 React hook to subscribe to a store from `@known-as-bmf/store`.
 
+[![Build Status](https://travis-ci.org/known-as-bmf/react-store.svg?branch=master)](https://travis-ci.org/known-as-bmf/react-store)
+
 ## Installation
 
 `npm install --save @known-as-bmf/store @known-as-bmf/react-store`
@@ -13,6 +15,7 @@ This library provides a react hook to subscribe to a store from [`@known-as-bmf/
 ```ts
 import React, { FunctionComponent } from 'react';
 import { of } from '@known-as-bmf/store';
+import { useStore } from '@known-as-bmf/react-store';
 
 const store = of({
   preferences: { theme: 'dark', lang: 'fr' },
@@ -32,6 +35,7 @@ You can also provide a _selector_ to only get part of the state (more info [here
 ```ts
 import React, { FunctionComponent } from 'react';
 import { of } from '@known-as-bmf/store';
+import { useStore } from '@known-as-bmf/react-store';
 
 const store = of({
   preferences: { theme: 'dark', lang: 'fr' },
