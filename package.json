@@ -1,6 +1,6 @@
 {
   "name": "@known-as-bmf/react-store",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "author": "Julien Avert",
   "description": "React hook to subscribe to a store from @known-as-bmf/store.",
   "keywords": [
