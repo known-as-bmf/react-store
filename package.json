@@ -34,11 +34,11 @@
     "lint": "tsdx lint"
   },
   "peerDependencies": {
-    "@known-as-bmf/store": "0.1.0",
+    "@known-as-bmf/store": ">=0.2.0",
     "react": ">=16.8"
   },
   "devDependencies": {
-    "@known-as-bmf/store": "0.1.0",
+    "@known-as-bmf/store": "0.2.0",
     "@testing-library/react": "9.4.0",
     "@testing-library/react-hooks": "3.2.1",
     "@types/jest": "25.1.3",
