@@ -7,6 +7,8 @@ React hook to subscribe to a store from `@known-as-bmf/store`.
 
 `npm install --save @known-as-bmf/store @known-as-bmf/react-store`
 
+You also need react (>= 16.8) installed in your project.
+
 ## Description
 
 This library provides a react hook to subscribe to a store from [`@known-as-bmf/store`](https://github.com/known-as-bmf/store).
