@@ -1,7 +1,7 @@
 import { renderHook, act } from '@testing-library/react-hooks';
+import { isStore, subscribe } from '@known-as-bmf/store';
 
 import { useNewStore } from '../src';
-import { isStore, subscribe } from '@known-as-bmf/store';
 
 describe('useNewStore', () => {
   it('should be a function', () => {
